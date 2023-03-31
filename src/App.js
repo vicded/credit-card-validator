@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
 
-function App() {
+import {CardFront, CardBack} from './components/Card/Cards';
+import CardForm from './components/CardForm/CardForm';
+
+function App() {  
+  const onSaveNameHandler = (data) => {
+    const userData = {
+      ...data
+    }
+    console.log('sss', userData);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CardFront/>
+      <CardBack></CardBack>
+      <CardForm
+        onSaveName = {onSaveNameHandler}
+        ></CardForm>
     </div>
   );
 }

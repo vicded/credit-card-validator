@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 447px;
+    height: 245px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card-front {
+    background-image: url("../../assets/bg-card-front.png");
+}
+
+.card-data__logo{
+    width: 84px;
+    height: 47px;
+}
+
+.card-front {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-data__number {
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 3.5px;
+    word-spacing: 6px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+
+/* Card back */
+
+.card-back {
+    background-image: url("../../assets/bg-card-back.png");
+}
+
+.card-pin {
+    text-align: right;
+    top: 110px;
+    right: 55px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
